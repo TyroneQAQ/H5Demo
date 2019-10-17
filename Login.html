@@ -36,7 +36,7 @@
         }
     </style>
 </head>
-<body>
+<body onkeydown="keyLogin();">
     <div class="dowebok">
         <div class="logo"></div>
         <div class="form-item">
@@ -55,6 +55,21 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script>
+	    function keyLogin(){
+	     if (event.keyCode==13)
+		  {//回车键的键值为13
+			document.getElementById("submit").click(); //调用登录按钮的登录事件
+		 	var  username = document.getElementById("username").value		 
+			var  password = document.getElementById("password").value
+               if(username == "520" && password =="520")
+			   {
+			    window.location.href='index.html';
+			   }
+			 else{
+				$('.tip').show()
+				}
+		  }
+}
 	//登录
         $(function () {
             $('#submit').on('click', function () {
