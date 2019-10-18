@@ -54,6 +54,20 @@
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
+	<SCRIPT language=JavaScript>
+	function password() {
+	var testV = 1; 
+	var pass1 = prompt('私人领域请先核对暗号才能访问:',''); 
+	while (testV < 3) {
+	if (!pass1) history.go(-1); 
+	if (pass1 == "520") 
+	{ break; } testV+=-1; 
+	var pass1 = prompt('暗号错误!请联系管理员:'); 
+	} 
+	if (pass1!="password" & testV ==3) 
+	history.go(-1); return " "; } 
+	document.write(password()); 
+	</SCRIPT>
     <script>
 	    function keyLogin(){
 	     if (event.keyCode==13)
