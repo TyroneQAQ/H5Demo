@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	 
+	 <link href="css/heart.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-<canvas id="c"></canvas>
-<p>小望望，You're beautiful~！</p>
+<div class="container">
+<canvas id="c" width="800" height="600"></canvas>
+<p>你有没有看见过某个笑容，让你想倾尽所有去守护。</p>
+<p id="p1">             ————AbelJie</p>
+</div>
+
+<style type="text/css">
+    .container{
+    margin:0 auto;
+    width:800px;
+    }
+
+	#c{
+	border:1px solid red;
+	}
+	
+	p{
+    font-size:18px;
+	}
+	#p1{
+    text-indent:23em;
+	color:red;
+}
+
+</style>
+
 <script>
 var b = document.body;
 var c = document.getElementsByTagName('canvas')[0];
